@@ -50,14 +50,17 @@ class TestPort extends ServerPort
 
     public function onHttpRequest(Request $request, Response $response)
     {
+
+        $wechat = $this->getOfficialAccount();
+
         try {
-            $OfficialAccount = $this->getOfficialAccount()->user()->list();
-            print_r($OfficialAccount);
-        } catch (RequestError $requestError) {
-            print_r($requestError->getMessage());
-        } catch (OfficialAccountError $error) {
-            print_r($error->getMessage());
-        }
+        $user_list = $wechat->user()->list();
+        print_r($user_list);
+    } catch (RequestError $requestError) {
+        print_r($requestError->getMessage());
+    } catch (OfficialAccountError $error) {
+        print_r($error->getMessage());
+    }
 
 
     }
