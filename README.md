@@ -56,11 +56,11 @@ wechat:
 
 ```php
 
- use ESD\Plugins\WeChat\Exception\OfficialAccountError;
- use ESD\Plugins\WeChat\Exception\RequestError;
-
+use ESD\Plugins\WeChat\Exception\OfficialAccountError;
+use ESD\Plugins\WeChat\Exception\RequestError;
+ 
  try {
-     $wechat->officialAccount()->ipList();
+   $list = $wechat->user()->list(); #获取粉丝列表
  } catch (RequestError $requestError){
     
  } catch (OfficialAccountError $error){
