@@ -52,15 +52,14 @@ class TestPort extends ServerPort
     {
 
         $wechat = $this->getOfficialAccount();
-
         try {
-        $user_list = $wechat->user()->list();
-        print_r($user_list);
-    } catch (RequestError $requestError) {
-        print_r($requestError->getMessage());
-    } catch (OfficialAccountError $error) {
-        print_r($error->getMessage());
-    }
+            $user_list = $wechat->user()->list();
+            print_r($user_list);
+        } catch (RequestError $requestError) {
+            print_r($requestError->getMessage());
+        } catch (OfficialAccountError $error) {
+            print_r($error->getMessage());
+        }
 
 
     }
