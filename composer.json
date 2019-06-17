@@ -23,7 +23,7 @@
       "homepage": "https://github.com/lphkxd"
     }
   ],
-  "name": "lphkxd/wechat-plugin",
+  "name": "esd/wechat-plugin",
   "type": "library",
   "keywords": [
     "server",
