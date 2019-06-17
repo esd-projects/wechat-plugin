@@ -1,0 +1,40 @@
+{
+  "require": {
+    "esd/esd-core": "~0.1",
+    "ext-json": "*",
+    "esd/cache-plugin": "~0.1",
+    "esd/saber-plugin": "~0.1",
+    "esd/redis-plugin": "~0.1"
+  },
+  "require-dev": {
+    "esd/esd-co-server": "~0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "ESD\\Plugins\\": "src/",
+      "ESD\\Plugins\\WeChat\\examples\\": "examples/",
+      "ESD\\Plugins\\WeChat\\exampleClass\\": "exampleClass/"
+    }
+  },
+  "authors": [
+    {
+      "name": "lphkxd",
+      "email": "4213509@qq.com",
+      "homepage": "https://github.com/lphkxd"
+    }
+  ],
+  "name": "lphkxd/wechat-plugin",
+  "type": "library",
+  "keywords": [
+    "server",
+    "swoole"
+  ],
+  "description": "wechat-plugin",
+  "license": "MIT",
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.laravel-china.org"
+    }
+  }
+}

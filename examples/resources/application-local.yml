@@ -1,0 +1,18 @@
+reload:
+  enable: false
+
+aop:
+  include_paths:
+    - ${ROOT_DIR}/examples/src
+
+scan:
+  include_paths:
+    - /Users/maozihao/Desktop/开发/ESD-Wechat/examples/src
+
+redis:
+  default:
+    host: '10.0.0.23'
+
+wechat:
+  official_account_config:
+    app_id: 1231231231231
