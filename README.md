@@ -27,7 +27,7 @@ EasySwoole Distributed WeChat Plugin 是一个基于 Swoole 4.x 全协程支持�
 
 
 
- 在开始操作之前需要获取一个实例，程序中使用以下方式获取实例
+ 在application-local.yml 中按需增加配置
 ```yaml
 wechat:
   official_account_config:  #公众号配置
